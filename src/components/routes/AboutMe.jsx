@@ -70,10 +70,9 @@ const AboutMe = () => {
             <br />
             <p>
               &nbsp;&nbsp;&nbsp;Mi nombre es Jose Alejandro Carrero Sanchez,
-              tengo 23 años y soy de Venezuela Edo Tachira. Estoy actualmente
-              estudiando ING en Sistemas, estoy cursando el sexto semestre y soy
-              estudiante de Academlo, tengo experiencia en tecnologias como CSS,
-              HTML, Javascript, REACT, Node-JS y Postgres.
+              tengo 23 años y soy de Venezuela Edo Tachira. Tengo estudios en
+              ING en Sistemas y soy egresado de Academlo, tengo experiencia en
+              tecnologias como CSS, HTML, Javascript, REACT, Node-JS y Postgres.
               <br />
               <br />
               &nbsp;&nbsp;&nbsp;Soy una persona activa, responsable, que busca

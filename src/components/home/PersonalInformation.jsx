@@ -60,6 +60,17 @@ const personalInformation = () => {
             </li>
           </ul>
         </div>
+        {/* <div className="cv">
+          <a href="cv/CV-Jose-Carrero-front.pdf" target={"_blank"}>
+            Ver CV
+          </a>
+          <a
+            href="cv/CV-Jose-Carrero-front.pdf"
+            download={"CV-Jose-Carrero-Front"}
+          >
+            Descargar CV
+          </a>
+        </div> */}
       </main>
     </article>
   );
