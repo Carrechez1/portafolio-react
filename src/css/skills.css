@@ -846,3 +846,43 @@ h3 {
     display: none;
   }
 }
+@media screen and (min-device-height: 700px) and (max-device-height: 899px) {
+  .contenedor {
+    padding-top: 70px;
+  }
+  .caja {
+    width: 180px;
+    height: 180px;
+    margin-right: 90px;
+  }
+  .cara {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    backface-visibility: hidden;
+  }
+  .cara1 {
+    transform: translateZ(90px);
+  }
+  .cara2 {
+    transform: rotateY(90deg) translateZ(90px);
+  }
+  .cara3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(90px);
+  }
+  .cara4 {
+    transform: rotateX(180deg) rotateZ(90deg) translateZ(90px);
+  }
+  .cara5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+  }
+  .cara6 {
+    transform: rotateX(-90deg) translateZ(90px) rotateZ(-90deg);
+  }
+  .skill__info {
+    margin-top: 60px;
+  }
+  .habilidades {
+    margin-top: 60px;
+  }
+}

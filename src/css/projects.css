@@ -537,3 +537,20 @@ h3 {
     transform: translateX(-250%);
   }
 }
+
+@media screen and (min-device-height: 700px) and (max-device-height: 899px) {
+  .projects__card .back .link a {
+    font-size: 40px;
+  }
+  .projects__card .back h3 {
+    font-size: 25px;
+    margin-top: 18px;
+    letter-spacing: 2px;
+  }
+  .projects__card .back p {
+    letter-spacing: 1px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 13px;
+  }
+}
