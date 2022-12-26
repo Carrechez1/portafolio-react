@@ -232,6 +232,144 @@ body {
 .contacto ul li .gmail:hover {
   background: var(--gmail);
 }
+.cv {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.cv:hover {
+  letter-spacing: 0.25em;
+}
+.verCV {
+  position: relative;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.verCV:hover {
+  letter-spacing: 0.25em;
+  background: #1e9bff;
+  color: #1e9bff;
+  box-shadow: 0 0 35px #1e9bff;
+}
+.verCV::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: #27282c;
+}
+.verCV span {
+  position: relative;
+  z-index: 1;
+}
+.verCV i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.verCV i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.verCV:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+.verCV i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.verCV:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+.dowloadCV {
+  position: relative;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.dowloadCV:hover {
+  letter-spacing: 0.25em;
+  background: #1e9bff;
+  color: #1e9bff;
+  box-shadow: 0 0 35px #1e9bff;
+}
+.dowloadCV::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: #27282c;
+}
+.dowloadCV span {
+  position: relative;
+  z-index: 1;
+}
+.dowloadCV i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.dowloadCV i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.dowloadCV:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+.dowloadCV i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.dowloadCV:hover i::after {
+  width: 20px;
+  left: 80%;
+}
 /**********************************************/
 @media (min-width: 355px) and (max-width: 550px) {
   body,
@@ -1181,5 +1319,37 @@ body {
   }
   .contacto ul li .gmail:hover {
     background: var(--gmail);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1250px) {
+  .verCV {
+    font-size: 16px;
+  }
+  .dowloadCV {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1025px) {
+  .verCV {
+    font-size: 15px;
+  }
+  .dowloadCV {
+    font-size: 15px;
+  }
+}
+@media (min-width: 433px) and (max-width: 520px) {
+  .verCV {
+    font-size: 16px;
+  }
+  .dowloadCV {
+    font-size: 16px;
+  }
+}
+@media (min-width: 350px) and (max-width: 433px) {
+  .verCV {
+    font-size: 12px;
+  }
+  .dowloadCV {
+    font-size: 12px;
   }
 }

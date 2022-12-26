@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../../css/skills.css";
 import Navbar from "../../shared/Navbar";
 import Particle from "../Particle";
 
 const Skills = () => {
+  const [open, setOpen] = useState(false);
+
+  const openClose = () => {
+    setOpen(true);
+  };
   return (
     <div className="skills">
       <header className="header">
@@ -54,7 +59,17 @@ const Skills = () => {
         <div className="habilidades">
           <h2 className="habilidades__title">Habilidades blandas</h2>
           <ul className="habilidades__lista">
-            <li className="habilidades__item1">Responsable</li>
+            <li>
+              {open ? (
+                <div className="openCont">
+                  <div className="open">Responsable</div>
+                </div>
+              ) : (
+                <div className={`habilidades__item1`} onClick={openClose}>
+                  Responsable
+                </div>
+              )}
+            </li>
             <li className="habilidades__item2">Adaptabilidad</li>
             <li className="habilidades__item3">Liderazgo</li>
             <li className="habilidades__item4">Trabajo en equipo</li>

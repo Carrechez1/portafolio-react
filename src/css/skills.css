@@ -178,109 +178,34 @@ h3 {
   padding: 0;
   align-items: center;
 }
-.habilidades__lista li {
+/* .habilidades__lista li {
   transition: transform 200ms ease;
   cursor: pointer;
 }
 .habilidades__lista li:hover {
   transform: scale(1.35);
   transition: transform 200ms ease;
+} */
+.openCont {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
 }
-.burbujas div {
-  width: 20px;
-  height: 20px;
-  border: 2px solid rgb(32, 65, 174);
-  background: rgba(0, 0, 255, 0.142);
-  border-radius: 100%;
-  position: absolute;
-  bottom: 0;
-  animation: burbujas 4s linear infinite;
-}
-.burbujas div:nth-child(1) {
-  width: 35px;
-  height: 32px;
-  left: 10px;
-  animation-duration: 4s;
-}
-.burbujas div:nth-child(2) {
-  width: 35px;
-  height: 32px;
-  left: 25%;
-  animation-duration: 9s;
-}
-.burbujas div:nth-child(3) {
-  width: 65px;
-  height: 62px;
-  left: 90%;
-  animation-duration: 7s;
-}
-.burbujas div:nth-child(4) {
-  width: 85px;
-  height: 82px;
-  left: 50%;
-  animation-duration: 6s;
-}
-.burbujas div:nth-child(5) {
-  width: 45px;
-  height: 42px;
-  left: 70%;
-  animation-duration: 8s;
-}
-.burbujas div:nth-child(6) {
-  width: 105px;
-  height: 102px;
-  left: 10%;
-  animation-duration: 3s;
-}
-.burbujas div:nth-child(7) {
-  width: 65px;
-  height: 62px;
-  left: 60%;
-  animation-duration: 5s;
-}
-.burbujas div:nth-child(8) {
-  width: 95px;
-  height: 92px;
-  left: 80%;
-  animation-duration: 4s;
-}
-.burbujas div:nth-child(9) {
-  width: 85px;
-  height: 82px;
-  left: 40%;
-  animation-duration: 8s;
-}
-.burbujas div:nth-child(10) {
-  width: 85px;
-  height: 82px;
-  left: 30%;
-  animation-duration: 6s;
-}
-@keyframes burbujas {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  3% {
-    width: 30px;
-    height: 27px;
-  }
-  25% {
-    margin-left: -60px;
-    opacity: 0.5;
-  }
-  50% {
-    margin-left: 20px;
-    opacity: 0.5;
-  }
-  75% {
-    margin-left: 50px;
-    opacity: 0.5;
-  }
-  100% {
-    transform: rotate(90deg);
-    bottom: 100vh;
-  }
+.open {
+  border: 1px solid #ccca;
+  padding: 20px;
+  width: max-content;
+  border-radius: 10px;
+  background-color: rgba(35, 43, 47, 0.701);
+  position: relative;
+  z-index: 90;
 }
 /******************************************************************/
 @media (min-width: 355px) and (max-width: 550px) {
