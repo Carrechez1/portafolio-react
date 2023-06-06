@@ -1,0 +1,1358 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 60% 40%);
+  height: 100%;
+}
+.P1 {
+  background-color: black;
+  height: 100vh;
+  color: aliceblue;
+  border-right: 1px solid white;
+}
+.P2 {
+  background-color: black;
+  color: aliceblue;
+}
+
+.myData {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  height: 100vh;
+}
+.myData1 {
+  grid-column: 4/8;
+  grid-row: 3/6;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 10px;
+  background-color: rgb(28, 35, 41);
+  border-radius: 50%;
+  padding: 20px;
+  width: 60%;
+  height: 80%;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: 0.4s;
+  animation: animacion 3s linear infinite;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.myData1:hover {
+  background-color: rgb(141, 169, 199);
+  box-shadow: 0 0 10px rgb(36, 90, 92), 0 0 40px rgb(36, 90, 92),
+    0 0 80px rgb(36, 90, 92);
+}
+
+.myData2 {
+  grid-column: 2/6;
+  grid-row: 6/9;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-color: rgb(28, 35, 41);
+  border-radius: 50%;
+  padding: 20px;
+  width: 60%;
+  height: 80%;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: 0.4s;
+  animation: animacion 3s linear infinite;
+  /* margin-left: 80px; */
+  z-index: 2;
+  cursor: pointer;
+}
+.myData2:hover {
+  background-color: rgb(141, 169, 199);
+  box-shadow: 0 0 10px rgb(36, 90, 92), 0 0 40px rgb(36, 90, 92),
+    0 0 80px rgb(36, 90, 92);
+}
+.myData3 {
+  grid-column: 5/11;
+  grid-row: 6/9;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-color: rgb(28, 35, 41);
+  border-radius: 50%;
+  padding: 20px;
+  width: 40%;
+  height: 80%;
+  margin: 0;
+  letter-spacing: 2px;
+  transition: 0.4s;
+  animation: animacion 3s linear infinite;
+  /* margin-right: 80px; */
+  z-index: 2;
+  cursor: pointer;
+}
+.myData3:hover {
+  background-color: rgb(141, 169, 199);
+  box-shadow: 0 0 10px rgb(36, 90, 92), 0 0 40px rgb(36, 90, 92),
+    0 0 80px rgb(36, 90, 92);
+}
+@keyframes animacion {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 73, 88, 0.6), 0 0 0 0 rgba(16, 73, 88, 0.6);
+  }
+  30% {
+    box-shadow: 0 0 0 40px rgba(159, 206, 220, 0), 0 0 0 0 rgba(16, 73, 88, 0.6);
+  }
+  65% {
+    box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+      0 0 0 20px rgba(159, 206, 220, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(159, 206, 220, 0),
+      0 0 0 20px rgba(159, 206, 220, 0);
+  }
+}
+
+.personal {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  justify-items: center;
+  color: rgb(222, 230, 238);
+}
+.personalImg {
+  grid-column: 1/11;
+  grid-row: 1/8;
+  width: 58%;
+  height: 58%;
+  background-color: rgb(28, 35, 41);
+  border-radius: 50%;
+  box-shadow: 0 60px 12px -18px rgb(27, 32, 36), 0 60px 20px -12px rgb(1, 2, 2);
+  animation: anime 1.5s infinite ease-in-out alternate;
+  -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+  margin-top: 20px;
+  z-index: 5;
+}
+@keyframes anime {
+  100% {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    box-shadow: 0 40px 10px -18px rgba(0, 0, 0, 0.2),
+      0 40px 16px -12px rgba(0, 0, 0, 0.2);
+  }
+}
+.img {
+  border-radius: 50%;
+}
+.personalData {
+  margin-top: 15px;
+  grid-column: 1/11;
+  grid-row: 6/11;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: table;
+  z-index: 5;
+}
+.name {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  text-shadow: 0 0 5px rgb(137, 151, 160), 0 0 15px rgb(184, 197, 199),
+    0 0 30px rgb(161, 173, 190);
+  margin-bottom: 0;
+}
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --linkedin: #0077b5;
+  --whatsapp: rgb(35, 179, 35);
+  --gmail: rgb(187, 155, 25);
+}
+.contacto {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 5;
+}
+.contacto ul {
+  padding: 0;
+}
+.contacto ul li {
+  display: inline-block;
+  margin: 0 10px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.contacto ul li a {
+  display: block;
+  padding: 0 10px;
+  background: #333;
+  color: #fff;
+  line-height: 60px;
+  font-size: 35px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2;
+}
+.contacto ul:hover a {
+  filter: blur(2px);
+}
+.contacto ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+.contacto ul li .facebook:hover {
+  background: var(--facebook);
+}
+.contacto ul li .instagram:hover {
+  background: var(--instagram);
+}
+.contacto ul li .whatsapp:hover {
+  background: var(--whatsapp);
+}
+.contacto ul li .linkedin:hover {
+  background: var(--linkedin);
+}
+.contacto ul li .gmail:hover {
+  background: var(--gmail);
+}
+.cv {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.cv:hover {
+  letter-spacing: 0.25em;
+}
+.verCV {
+  position: relative;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.verCV:hover {
+  letter-spacing: 0.25em;
+  background: #1e9bff;
+  color: #1e9bff;
+  box-shadow: 0 0 35px #1e9bff;
+}
+.verCV::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: #27282c;
+}
+.verCV span {
+  position: relative;
+  z-index: 1;
+}
+.verCV i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.verCV i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.verCV:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+.verCV i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.verCV:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+.dowloadCV {
+  position: relative;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.dowloadCV:hover {
+  letter-spacing: 0.25em;
+  background: #1e9bff;
+  color: #1e9bff;
+  box-shadow: 0 0 35px #1e9bff;
+}
+.dowloadCV::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: #27282c;
+}
+.dowloadCV span {
+  position: relative;
+  z-index: 1;
+}
+.dowloadCV i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.dowloadCV i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.dowloadCV:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+.dowloadCV i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #1e9bff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.dowloadCV:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+/**********************************************/
+@media (min-width: 355px) and (max-width: 550px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .P1 {
+    order: 1;
+    background-color: black;
+    border-right: none;
+  }
+  .P2 {
+    background-color: black;
+    color: rgb(66, 79, 90);
+  }
+  .myData {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    height: 100vh;
+  }
+  .myData1 {
+    grid-column: 2/10;
+    grid-row: 2/5;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 80%;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: none;
+    animation: animacion 3s linear infinite;
+    z-index: 2;
+  }
+
+  .myData1:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+
+  .myData2 {
+    grid-column: 2/10;
+    grid-row: 5/8;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 80%;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-left: 80px; */
+    z-index: 2;
+  }
+  .myData2:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+  .myData3 {
+    grid-column: 2/10;
+    grid-row: 8/11;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 80%;
+    margin: 0;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-right: 80px; */
+    z-index: 2;
+  }
+  .myData3:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+  @keyframes animacion {
+    0% {
+      box-shadow: 0 0 0 0 rgba(16, 73, 88, 0.6), 0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    30% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    65% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+  }
+
+  .personal {
+    margin-top: 30px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    justify-items: center;
+
+    color: rgb(222, 230, 238);
+  }
+  .personalImg {
+    grid-column: 1/11;
+    grid-row: 1/8;
+    width: 45%;
+    height: 45%;
+    background-color: rgb(28, 35, 41);
+    border-radius: 50%;
+    box-shadow: 0 60px 12px -18px rgb(27, 32, 36),
+      0 60px 20px -12px rgb(1, 2, 2);
+    animation: anime 1.5s infinite ease-in-out alternate;
+    -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+    margin-top: 20px;
+  }
+  @keyframes anime {
+    100% {
+      transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+      -moz-transform: translateY(20px);
+      -o-transform: translateY(20px);
+      box-shadow: 0 40px 10px -18px rgba(0, 0, 0, 0.2),
+        0 40px 16px -12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .img {
+    border-radius: 50%;
+  }
+  .personalData {
+    margin-top: 24px;
+    grid-column: 1/11;
+    grid-row: 5/11;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: table;
+    /* z-index: 2; */
+  }
+  .name {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    text-shadow: 0 0 5px rgb(137, 151, 160), 0 0 15px rgb(184, 197, 199),
+      0 0 30px rgb(161, 173, 190);
+    margin-bottom: 0;
+  }
+  :root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077b5;
+    --whatsapp: rgb(35, 179, 35);
+    --gmail: rgb(187, 155, 25);
+  }
+  .contacto {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .contacto ul {
+    padding: 0;
+  }
+  .contacto ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 70px;
+    text-align: center;
+  }
+  .contacto ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: none;
+  }
+  .contacto ul:hover a {
+    filter: none;
+  }
+  .contacto ul li a:hover {
+    transform: none;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    filter: none;
+  }
+  .contacto ul li .facebook {
+    background: var(--facebook);
+  }
+  .contacto ul li .instagram {
+    background: var(--instagram);
+  }
+  .contacto ul li .whatsapp {
+    background: var(--whatsapp);
+  }
+  .contacto ul li .linkedin {
+    background: var(--linkedin);
+  }
+  .contacto ul li .gmail {
+    background: var(--gmail);
+  }
+}
+/*******************************************/
+@media (min-width: 551px) and (max-width: 800px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .P1 {
+    order: 1;
+    background-color: black;
+    border-right: none;
+  }
+  .P2 {
+    background-color: black;
+    color: rgb(66, 79, 90);
+  }
+  .myData {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    height: 100vh;
+  }
+  .myData1 {
+    grid-column: 2/10;
+    grid-row: 2/5;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 90%;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: none;
+    animation: animacion 3s linear infinite;
+    z-index: 2;
+    margin: -40px;
+  }
+
+  .myData1:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+
+  .myData2 {
+    grid-column: 2/10;
+    grid-row: 5/8;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 90%;
+    margin: -20px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-left: 80px; */
+    z-index: 2;
+  }
+  .myData2:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+  .myData3 {
+    grid-column: 2/10;
+    grid-row: 8/11;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 90%;
+    margin: -20;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-right: 80px; */
+    z-index: 2;
+  }
+  .myData3:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+  @keyframes animacion {
+    0% {
+      box-shadow: 0 0 0 0 rgba(16, 73, 88, 0.6), 0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    30% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    65% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+  }
+
+  .personal {
+    margin-top: 30px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    justify-items: center;
+
+    color: rgb(222, 230, 238);
+  }
+  .personalImg {
+    grid-column: 1/11;
+    grid-row: 1/9;
+    width: 55%;
+    height: 55%;
+    background-color: rgb(28, 35, 41);
+    border-radius: 50%;
+    box-shadow: 0 60px 12px -18px rgb(27, 32, 36),
+      0 60px 20px -12px rgb(1, 2, 2);
+    animation: anime 1.5s infinite ease-in-out alternate;
+    -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+    margin-top: 20px;
+    z-index: 10;
+  }
+  @keyframes anime {
+    100% {
+      transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+      -moz-transform: translateY(20px);
+      -o-transform: translateY(20px);
+      box-shadow: 0 40px 10px -18px rgba(0, 0, 0, 0.2),
+        0 40px 16px -12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .img {
+    border-radius: 50%;
+  }
+  .personalData {
+    margin-top: 34px;
+    grid-column: 1/11;
+    grid-row: 6/11;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: table;
+    /* z-index: 2; */
+  }
+  .name {
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+    text-shadow: 0 0 5px rgb(137, 151, 160), 0 0 15px rgb(184, 197, 199),
+      0 0 30px rgb(161, 173, 190);
+    margin-bottom: 0;
+  }
+  :root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077b5;
+    --whatsapp: rgb(35, 179, 35);
+    --gmail: rgb(187, 155, 25);
+  }
+  .contacto {
+    padding-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .contacto ul {
+    padding: 0;
+  }
+  .contacto ul li {
+    display: inline-block;
+    margin: 0 10px;
+    width: 70px;
+    height: 90px;
+    text-align: center;
+  }
+  .contacto ul li a {
+    display: block;
+    padding: 0 5px;
+    background: #333;
+    color: #fff;
+    line-height: 70px;
+    font-size: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: none;
+  }
+  .contacto ul:hover a {
+    filter: none;
+  }
+  .contacto ul li a:hover {
+    transform: none;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    filter: none;
+  }
+  .contacto ul li .facebook {
+    background: var(--facebook);
+  }
+  .contacto ul li .instagram {
+    background: var(--instagram);
+  }
+  .contacto ul li .whatsapp {
+    background: var(--whatsapp);
+  }
+  .contacto ul li .linkedin {
+    background: var(--linkedin);
+  }
+  .contacto ul li .gmail {
+    background: var(--gmail);
+  }
+}
+/***************************************************/
+/***************************************************/
+@media (min-width: 801px) and (max-width: 1000px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .P1 {
+    order: 1;
+    background-color: black;
+    border-right: none;
+  }
+  .P2 {
+    background-color: black;
+    color: rgb(66, 79, 90);
+  }
+  .myData {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    height: 100vh;
+  }
+  .myData1 {
+    grid-column: 2/10;
+    grid-row: 2/5;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 90%;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: none;
+    animation: animacion 3s linear infinite;
+    z-index: 2;
+    margin: -40px;
+  }
+
+  .myData1:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+
+  .myData2 {
+    grid-column: 2/10;
+    grid-row: 5/8;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 90%;
+    margin: -20px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-left: 80px; */
+    z-index: 2;
+  }
+  .myData2:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+  .myData3 {
+    grid-column: 2/10;
+    grid-row: 8/11;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(42, 23, 152);
+    border-radius: 50%;
+    padding: 20px;
+    width: 60%;
+    height: 90%;
+    margin: -20;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-right: 80px; */
+    z-index: 2;
+  }
+  .myData3:hover {
+    background-color: rgb(42, 23, 152);
+    box-shadow: none;
+  }
+  @keyframes animacion {
+    0% {
+      box-shadow: 0 0 0 0 rgba(16, 73, 88, 0.6), 0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    30% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    65% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+  }
+
+  .personal {
+    margin-top: 30px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    justify-items: center;
+
+    color: rgb(222, 230, 238);
+  }
+  .personalImg {
+    grid-column: 1/11;
+    grid-row: 1/9;
+    width: 55%;
+    height: 55%;
+    background-color: rgb(28, 35, 41);
+    border-radius: 50%;
+    box-shadow: 0 60px 12px -18px rgb(27, 32, 36),
+      0 60px 20px -12px rgb(1, 2, 2);
+    animation: anime 1.5s infinite ease-in-out alternate;
+    -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+    margin-top: 20px;
+    z-index: 10;
+  }
+  @keyframes anime {
+    100% {
+      transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+      -moz-transform: translateY(20px);
+      -o-transform: translateY(20px);
+      box-shadow: 0 40px 10px -18px rgba(0, 0, 0, 0.2),
+        0 40px 16px -12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .img {
+    border-radius: 50%;
+  }
+  .personalData {
+    margin-top: 34px;
+    grid-column: 1/11;
+    grid-row: 6/11;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: table;
+    /* z-index: 2; */
+  }
+  .name {
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+    text-shadow: 0 0 5px rgb(137, 151, 160), 0 0 15px rgb(184, 197, 199),
+      0 0 30px rgb(161, 173, 190);
+    margin-bottom: 0;
+  }
+  :root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077b5;
+    --whatsapp: rgb(35, 179, 35);
+    --gmail: rgb(187, 155, 25);
+  }
+  .contacto {
+    padding-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .contacto ul {
+    padding: 0;
+  }
+  .contacto ul li {
+    display: inline-block;
+    margin: 0 10px;
+    width: 70px;
+    height: 90px;
+    text-align: center;
+  }
+  .contacto ul li a {
+    display: block;
+    padding: 0 5px;
+    background: #333;
+    color: #fff;
+    line-height: 70px;
+    font-size: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: none;
+  }
+  .contacto ul:hover a {
+    filter: none;
+  }
+  .contacto ul li a:hover {
+    transform: none;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    filter: none;
+  }
+  .contacto ul li .facebook {
+    background: var(--facebook);
+  }
+  .contacto ul li .instagram {
+    background: var(--instagram);
+  }
+  .contacto ul li .whatsapp {
+    background: var(--whatsapp);
+  }
+  .contacto ul li .linkedin {
+    background: var(--linkedin);
+  }
+  .contacto ul li .gmail {
+    background: var(--gmail);
+  }
+}
+/*******************************************/
+/*******************************************/
+@media (min-width: 1000px) and (max-width: 1200px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+  .home {
+    display: grid;
+    grid-template-columns: repeat(2, 60% 40%);
+    height: 100%;
+  }
+  .P1 {
+    height: 100vh;
+    color: aliceblue;
+    background-color: black;
+    border-right: 0.5px solid white;
+  }
+
+  .P2 {
+    background-color: black;
+    color: aliceblue;
+  }
+
+  .myData {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    height: 100vh;
+  }
+  .myData1 {
+    grid-column: 4/8;
+    grid-row: 3/6;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgb(28, 35, 41);
+    border-radius: 50%;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    z-index: 5;
+  }
+
+  .myData1:hover {
+    background-color: rgb(141, 169, 199);
+    box-shadow: 0 0 10px rgb(36, 90, 92), 0 0 40px rgb(36, 90, 92),
+      0 0 80px rgb(36, 90, 92);
+  }
+
+  .myData2 {
+    grid-column: 2/6;
+    grid-row: 6/9;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(28, 35, 41);
+    border-radius: 50%;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-left: 80px; */
+    z-index: 2;
+  }
+  .myData2:hover {
+    background-color: rgb(141, 169, 199);
+    box-shadow: 0 0 10px rgb(36, 90, 92), 0 0 40px rgb(36, 90, 92),
+      0 0 80px rgb(36, 90, 92);
+  }
+  .myData3 {
+    grid-column: 5/11;
+    grid-row: 6/9;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(28, 35, 41);
+    border-radius: 50%;
+    padding: 20px;
+    width: 53.4%;
+    height: 80%;
+    margin: 0;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    animation: animacion 3s linear infinite;
+    /* margin-right: 80px; */
+    z-index: 2;
+  }
+  .myData3:hover {
+    background-color: rgb(141, 169, 199);
+    box-shadow: 0 0 10px rgb(36, 90, 92), 0 0 40px rgb(36, 90, 92),
+      0 0 80px rgb(36, 90, 92);
+  }
+  @keyframes animacion {
+    0% {
+      box-shadow: 0 0 0 0 rgba(16, 73, 88, 0.6), 0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    30% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 0 rgba(16, 73, 88, 0.6);
+    }
+    65% {
+      box-shadow: 0 0 0 40px rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(159, 206, 220, 0),
+        0 0 0 20px rgba(159, 206, 220, 0);
+    }
+  }
+
+  .personal {
+    margin-top: 50px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    justify-items: center;
+    color: rgb(222, 230, 238);
+  }
+  .personalImg {
+    grid-column: 1/11;
+    grid-row: 1/8;
+    width: 58%;
+    height: 58%;
+    background-color: rgb(28, 35, 41);
+    border-radius: 50%;
+    box-shadow: 0 60px 12px -18px rgb(27, 32, 36),
+      0 60px 20px -12px rgb(1, 2, 2);
+    animation: anime 1.5s infinite ease-in-out alternate;
+    -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+    margin-top: 20px;
+    z-index: 5;
+  }
+  @keyframes anime {
+    100% {
+      transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+      -moz-transform: translateY(20px);
+      -o-transform: translateY(20px);
+      box-shadow: 0 40px 10px -18px rgba(0, 0, 0, 0.2),
+        0 40px 16px -12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .img {
+    border-radius: 50%;
+  }
+  .personalData {
+    margin-top: 15px;
+    grid-column: 1/11;
+    grid-row: 6/11;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: table;
+    z-index: 5;
+  }
+  .name {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    text-shadow: 0 0 5px rgb(137, 151, 160), 0 0 15px rgb(184, 197, 199),
+      0 0 30px rgb(161, 173, 190);
+    margin-bottom: 0;
+  }
+  :root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077b5;
+    --whatsapp: rgb(35, 179, 35);
+    --gmail: rgb(187, 155, 25);
+  }
+  .contacto {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .contacto ul {
+    padding: 0;
+  }
+  .contacto ul li {
+    display: inline-block;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  .contacto ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 60px;
+    font-size: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.2;
+  }
+  .contacto ul:hover a {
+    filter: blur(2px);
+  }
+  .contacto ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    filter: none;
+  }
+  .contacto ul li .facebook:hover {
+    background: var(--facebook);
+  }
+  .contacto ul li .instagram:hover {
+    background: var(--instagram);
+  }
+  .contacto ul li .whatsapp:hover {
+    background: var(--whatsapp);
+  }
+  .contacto ul li .linkedin:hover {
+    background: var(--linkedin);
+  }
+  .contacto ul li .gmail:hover {
+    background: var(--gmail);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1250px) {
+  .verCV {
+    font-size: 16px;
+  }
+  .dowloadCV {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1025px) {
+  .verCV {
+    font-size: 15px;
+  }
+  .dowloadCV {
+    font-size: 15px;
+  }
+}
+@media (min-width: 433px) and (max-width: 520px) {
+  .verCV {
+    font-size: 16px;
+  }
+  .dowloadCV {
+    font-size: 16px;
+  }
+}
+@media (min-width: 350px) and (max-width: 433px) {
+  .verCV {
+    font-size: 12px;
+  }
+  .dowloadCV {
+    font-size: 12px;
+  }
+}

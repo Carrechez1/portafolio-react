@@ -1,0 +1,813 @@
+.skills {
+  background-color: black;
+  height: 100vh;
+  color: aliceblue;
+  font-family: "Caladea", serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  height: 8vh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.contenedor {
+  padding-top: 90px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.caja {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform-origin: 100px, 100px 0;
+  animation: girar 20s ease-in-out infinite;
+}
+.cara {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+}
+.cara1 {
+  transform: translateZ(100px);
+}
+.cara2 {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.cara3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.cara4 {
+  transform: rotateX(180deg) rotateZ(90deg) translateZ(100px);
+}
+.cara5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.cara6 {
+  transform: rotateX(-90deg) translateZ(100px) rotateZ(-90deg);
+}
+@keyframes girar {
+  0% {
+    transform: none;
+  }
+  14%,
+  16.6% {
+    transform: rotateY(-90deg);
+  }
+  150%,
+  33.33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  46%,
+  49.999% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  63%,
+  66% {
+    transform: rotateY(180deg) rotateZ(90deg);
+  }
+  80%,
+  83% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  89%,
+  92% {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  98%,
+  100% {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
+}
+.skill__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.skill__info {
+  z-index: 2;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  text-align: center;
+
+  padding: 15px;
+  border: 5px solid rgb(142, 129, 129);
+  background: rgba(174, 165, 165, 0.194);
+}
+.skill__title {
+  margin-bottom: 25px;
+}
+.skill__list {
+  margin-top: 27px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  list-style: none;
+  justify-items: center;
+  padding: 0;
+  font-size: 20px;
+}
+
+.skill__item1 {
+  background-color: rgba(172, 51, 6, 0.787);
+  padding: 5px;
+}
+.skill__item2 {
+  background-color: rgba(6, 64, 172, 0.787);
+  padding: 5px;
+}
+.skill__item3 {
+  background-color: rgb(109, 109, 8);
+  padding: 5px;
+}
+.skill__item4 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: rgb(27, 113, 84);
+  padding: 5px;
+}
+.skill__item5 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background-color: rgb(32, 22, 22);
+  padding: 5px;
+}
+.habilidades {
+  z-index: 2;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 500px;
+  border: 5px solid rgb(142, 129, 129);
+  padding: 15px;
+  background: rgba(174, 165, 165, 0.194);
+}
+.habilidades__title {
+  margin-bottom: 10px;
+}
+.habilidades__lista {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+/* .habilidades__lista li {
+  transition: transform 200ms ease;
+  cursor: pointer;
+}
+.habilidades__lista li:hover {
+  transform: scale(1.35);
+  transition: transform 200ms ease;
+} */
+.openCont {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.open {
+  border: 1px solid #ccca;
+  padding: 20px;
+  width: max-content;
+  border-radius: 10px;
+  background-color: rgba(35, 43, 47, 0.701);
+  position: relative;
+  z-index: 90;
+}
+/******************************************************************/
+@media (min-width: 355px) and (max-width: 550px) {
+  .skills {
+    background-color: black;
+    height: 100%;
+    color: aliceblue;
+    font-family: "Caladea", serif;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    width: 100%;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+
+  .contenedor {
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .caja {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform-origin: 100px, 100px 0;
+    animation: girar 20s ease-in-out infinite;
+    z-index: 2;
+  }
+  .cara {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+  .cara1 {
+    transform: translateZ(100px);
+    z-index: 2;
+  }
+  .cara2 {
+    transform: rotateY(90deg) translateZ(100px);
+    z-index: 2;
+  }
+  .cara3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    z-index: 2;
+  }
+  .cara4 {
+    transform: rotateX(180deg) rotateZ(90deg) translateZ(100px);
+    z-index: 2;
+  }
+  .cara5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    z-index: 2;
+  }
+  .cara6 {
+    transform: rotateX(-90deg) translateZ(100px) rotateZ(-90deg);
+    z-index: 2;
+  }
+  @keyframes girar {
+    0% {
+      transform: none;
+    }
+    14%,
+    16.6% {
+      transform: rotateY(-90deg);
+    }
+    150%,
+    33.33% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    46%,
+    49.999% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    63%,
+    66% {
+      transform: rotateY(180deg) rotateZ(90deg);
+    }
+    80%,
+    83% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    89%,
+    92% {
+      transform: rotateX(90deg) rotateY(90deg);
+    }
+    98%,
+    100% {
+      transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+  }
+  .skill__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill__info {
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 90%;
+    padding: 15px;
+    border: 5px solid rgb(142, 129, 129);
+    background: rgba(174, 165, 165, 0.194);
+    margin: 25px;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+  .skill__title {
+    margin-bottom: 25px;
+  }
+  .skill__list {
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    list-style: none;
+    justify-items: center;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .skill__item1 {
+    background-color: rgba(172, 51, 6, 0.787);
+    padding: 5px;
+  }
+  .skill__item2 {
+    background-color: rgba(6, 64, 172, 0.787);
+    padding: 5px;
+  }
+  .skill__item3 {
+    background-color: rgb(109, 109, 8);
+    padding: 5px;
+  }
+  .skill__item4 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: rgb(27, 113, 84);
+    padding: 5px;
+  }
+  .skill__item5 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: rgb(32, 22, 22);
+    padding: 5px;
+  }
+  .habilidades {
+    z-index: 2;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 90%;
+    border: 5px solid rgb(142, 129, 129);
+    padding: 15px;
+    background: rgba(174, 165, 165, 0.194);
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .habilidades__title {
+    margin-bottom: 10px;
+  }
+  .habilidades__lista {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+  }
+  .habilidades__lista li {
+    transition: none;
+    cursor: auto;
+  }
+  .habilidades__lista li:hover {
+    transform: none;
+    transition: none;
+  }
+  .burbujas div {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(32, 65, 174);
+    background: rgba(0, 0, 255, 0.142);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -80%;
+    animation: burbujas 4s linear infinite;
+    display: none;
+  }
+  .burbujas div:nth-child(1) {
+    width: 35px;
+    height: 32px;
+    left: 10px;
+    animation-duration: 4s;
+  }
+  .burbujas div:nth-child(2) {
+    width: 35px;
+    height: 32px;
+    left: 25%;
+    animation-duration: 9s;
+  }
+  .burbujas div:nth-child(3) {
+    width: 65px;
+    height: 62px;
+    left: 90%;
+    animation-duration: 7s;
+    display: none;
+  }
+  .burbujas div:nth-child(4) {
+    width: 85px;
+    height: 82px;
+    left: 50%;
+    animation-duration: 6s;
+  }
+  .burbujas div:nth-child(5) {
+    width: 45px;
+    height: 42px;
+    left: 70%;
+    animation-duration: 8s;
+    display: none;
+  }
+  .burbujas div:nth-child(6) {
+    width: 105px;
+    height: 102px;
+    left: 10%;
+    animation-duration: 3s;
+  }
+  .burbujas div:nth-child(7) {
+    width: 65px;
+    height: 62px;
+    left: 60%;
+    animation-duration: 5s;
+  }
+  .burbujas div:nth-child(8) {
+    width: 95px;
+    height: 92px;
+    left: 80%;
+    animation-duration: 4s;
+    display: none;
+  }
+  .burbujas div:nth-child(9) {
+    width: 85px;
+    height: 82px;
+    left: 40%;
+    animation-duration: 8s;
+  }
+  .burbujas div:nth-child(10) {
+    width: 85px;
+    height: 82px;
+    left: 30%;
+    animation-duration: 6s;
+  }
+  @keyframes burbujas {
+    0% {
+      width: 0;
+      height: 10%;
+    }
+    3% {
+      width: 30px;
+      height: 27px;
+    }
+    25% {
+      margin-left: -60px;
+      opacity: 0.5;
+    }
+    50% {
+      margin-left: 20px;
+      opacity: 0.5;
+    }
+    75% {
+      margin-left: 50px;
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(90deg);
+      bottom: 100%;
+    }
+  }
+}
+/************************/
+@media (min-width: 551px) and (max-width: 800px) {
+  .skills {
+    background-color: black;
+    height: 100%;
+    color: aliceblue;
+    font-family: "Caladea", serif;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    width: 100%;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+
+  .contenedor {
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .caja {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform-origin: 100px, 100px 0;
+    animation: girar 20s ease-in-out infinite;
+    z-index: 5;
+  }
+  .cara {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+  .skill__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill__info {
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 80%;
+    padding: 25px;
+    border: 5px solid rgb(142, 129, 129);
+    background: rgba(174, 165, 165, 0.194);
+    margin: 25px;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+  .skill__title {
+    margin-bottom: 25px;
+  }
+  .skill__list {
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    list-style: none;
+    justify-items: center;
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .habilidades {
+    z-index: 2;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 80%;
+    border: 5px solid rgb(142, 129, 129);
+    padding: 25px;
+    background: rgba(174, 165, 165, 0.194);
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .habilidades__title {
+    margin-bottom: 10px;
+  }
+  .habilidades__lista {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    font-size: 24px;
+  }
+  .habilidades__lista li {
+    transition: none;
+    cursor: auto;
+  }
+  .habilidades__lista li:hover {
+    transform: none;
+    transition: none;
+  }
+  .burbujas div {
+    display: none;
+  }
+}
+/*********************************************/
+@media (min-width: 801px) and (max-width: 1000px) {
+  .skills {
+    background-color: black;
+    height: 100%;
+    color: aliceblue;
+    font-family: "Caladea", serif;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    width: 100%;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+
+  .contenedor {
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .caja {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform-origin: 100px, 100px 0;
+    animation: girar 20s ease-in-out infinite;
+    z-index: 5;
+  }
+  .cara {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+  .skill__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill__info {
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 80%;
+    padding: 25px;
+    border: 5px solid rgb(142, 129, 129);
+    background: rgba(174, 165, 165, 0.194);
+    margin: 25px;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+  .skill__title {
+    margin-bottom: 25px;
+    font-size: 32px;
+  }
+  .skill__list {
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    list-style: none;
+    justify-items: center;
+    padding: 0;
+    font-size: 28px;
+  }
+  .skill__spanP {
+    font-size: 24px;
+  }
+  .habilidades {
+    z-index: 2;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2.5px;
+    text-align: center;
+    width: 80%;
+    border: 5px solid rgb(142, 129, 129);
+    padding: 25px;
+    background: rgba(174, 165, 165, 0.194);
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .habilidades__title {
+    margin-bottom: 10px;
+  }
+  .habilidades__lista {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    font-size: 24px;
+  }
+  .habilidades__lista li {
+    transition: none;
+    cursor: auto;
+  }
+  .habilidades__lista li:hover {
+    transform: none;
+    transition: none;
+  }
+  .burbujas div {
+    display: none;
+  }
+}
+@media screen and (min-device-height: 700px) and (max-device-height: 899px) {
+  .contenedor {
+    padding-top: 70px;
+  }
+  .caja {
+    width: 180px;
+    height: 180px;
+    margin-right: 90px;
+  }
+  .cara {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    backface-visibility: hidden;
+  }
+  .cara1 {
+    transform: translateZ(90px);
+  }
+  .cara2 {
+    transform: rotateY(90deg) translateZ(90px);
+  }
+  .cara3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(90px);
+  }
+  .cara4 {
+    transform: rotateX(180deg) rotateZ(90deg) translateZ(90px);
+  }
+  .cara5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+  }
+  .cara6 {
+    transform: rotateX(-90deg) translateZ(90px) rotateZ(-90deg);
+  }
+  .skill__info {
+    margin-top: 60px;
+  }
+  .habilidades {
+    margin-top: 60px;
+  }
+}
